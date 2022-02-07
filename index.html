@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+
+    <title>Interest Calculator</title>
+</head>
+<body>
+    <div class="container body">
+        <div class="row calculadora justify-content-center">
+            <div class="row bloques" id="section1">
+                <div class="col titulo">
+                    Compound Interest Calculator
+                </div>
+            </div>
+            <div class="row bloques" id="deposito">
+                <div class="col-12 bloque bloque-text text-center">
+                    Deposito inicial
+                </div>
+                <div class="col-md-12 bloque bloque-input">
+                    <input class="form-control form-control-md" type="number" placeholder="10.000€" id="principal">
+                </div>
+            </div>
+            <div class="row bloques" id="contribucion">
+                <div class="col-12 bloque bloque-text text-center">
+                    Contribución mensual
+                </div>
+                <div class="col-md-12 bloque bloque-input">
+                    <input class="form-control form-control-md" type="number" placeholder="100€" id="additionalCash" >
+                </div>
+            </div>
+            <div class="row bloques" id="timeOfInvestment">
+                <div class="col-12 bloque bloque-text text-center">
+                    Tiempo a invertir
+                </div>
+                <div class="col-md-12 bloque bloque-input">
+                    <input class="form-control form-control-md" type="number" placeholder="10 años" id="termOfLoan">
+                </div>
+            </div>
+            <div class="row bloques" id="typeOfInvestment">
+                <div class="col-12 bloque bloque-text text-center">
+                    Tipo de inversión
+                </div>
+                <div class="col-md-12 bloque bloque-input">
+                    <select class="form-control form-select form-control-md" placeholder="Seleccione una de las opciones" id="interestRate">
+                        <option value="0.15">Riesgo bajo</option>
+                        <option value="0.30">Riesgo medio</option>
+                        <option value="0.50">Riesgo alto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row bloques" id="bottonCalc">
+                <div class="col-12 bloque bloque-text text-center">
+                    <button class="btn btn-primary" type="submit" id="botonCalcular" onclick="compoundInterest()">Calcular</button>
+                </div>
+            </div>
+            <div class="row bloques" id="resultado">
+                <div class="col-12 bloque bloque-resultado" id="montoResultado">
+                    <p id="primerTest"></p>
+                    Test
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>

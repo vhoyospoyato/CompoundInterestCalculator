@@ -1,0 +1,59 @@
+.body{
+    font-family: Raleway;
+    font-size: medium;
+    color: #FFFFFF;
+    font-weight: normal;
+
+}
+
+.calculadora{
+
+    position: static;
+    width: 408px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    top: 45px;
+    
+    background: #363A50;
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+
+}
+
+.titulo {
+  
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+div.bloques{
+
+    padding: 10px;
+
+}
+
+div.bloque.bloque-text{
+    padding-bottom: 10px;
+}
+
+div.bloque.bloque-input{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+div.bloque.bloque-resultado{
+    background-color: green;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-radius: 20px;
+}
