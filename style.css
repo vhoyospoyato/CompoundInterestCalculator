@@ -3,11 +3,9 @@
     font-size: medium;
     color: #FFFFFF;
     font-weight: normal;
-
 }
 
 .calculadora{
-
     position: static;
     width: 408px;
     padding-top: 25px;
@@ -18,11 +16,9 @@
     border-radius: 20px;
     
     /* Inside auto layout */
-
 }
 
 .titulo {
-  
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
@@ -56,4 +52,5 @@ div.bloque.bloque-resultado{
     margin-right: 10%;
     width: 80%;
     border-radius: 20px;
+    font-size: 30px;
 }
