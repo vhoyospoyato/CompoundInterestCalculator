@@ -23,7 +23,7 @@
                     Deposito inicial
                 </div>
                 <div class="col-md-12 bloque bloque-input">
-                    <input class="form-control form-control-md" type="number" placeholder="10.000€" id="principal">
+                    <input class="form-control form-control-md" style="border-radius: 20px; border:0px" type="number" placeholder="10.000€" id="principal">
                 </div>
             </div>
             <div class="row bloques" id="contribucion">
@@ -31,7 +31,7 @@
                     Contribución mensual
                 </div>
                 <div class="col-md-12 bloque bloque-input">
-                    <input class="form-control form-control-md" type="number" placeholder="100€" id="additionalCash" >
+                    <input class="form-control form-control-md" style="border-radius: 20px; border:0px" type="number" placeholder="100€" id="additionalCash" >
                 </div>
             </div>
             <div class="row bloques" id="timeOfInvestment">
@@ -39,7 +39,7 @@
                     Tiempo a invertir
                 </div>
                 <div class="col-md-12 bloque bloque-input">
-                    <input class="form-control form-control-md" type="number" placeholder="10 años" id="termOfLoan">
+                    <input class="form-control form-control-md" style="border-radius: 20px; border:0px" type="number" placeholder="10 años" id="termOfLoan">
                 </div>
             </div>
             <div class="row bloques" id="typeOfInvestment">
@@ -47,8 +47,8 @@
                     Tipo de inversión
                 </div>
                 <div class="col-md-12 bloque bloque-input">
-                    <select class="form-control form-select form-control-md" placeholder="Seleccione una de las opciones" id="interestRate">
-                        <option value="0.15">Riesgo bajo</option>
+                    <select class="form-control form-select form-control-md" style="border-radius: 20px; border:0px" placeholder="Seleccione una de las opciones" id="interestRate">
+                        <option style="border-radius: 20px; border:0px" value="0.15">Riesgo bajo</option>
                         <option value="0.30">Riesgo medio</option>
                         <option value="0.50">Riesgo alto</option>
                     </select>
@@ -56,10 +56,10 @@
             </div>
             <div class="row bloques" id="bottonCalc">
                 <div class="col-12 bloque bloque-text text-center">
-                    <button class="btn btn-primary" type="submit" id="botonCalcular" onclick="compoundInterest()">Calcular</button>
+                    <button class="btn btn-primary" style="border-radius: 20px; border:0px" type="submit" id="botonCalcular" onclick="compoundInterest()">Calcular</button>
                 </div>
             </div>
-            <div class="row bloques" id="resultado">
+            <div class="row bloques" id="resultado" style="display: none;">
                 <div class="col-12 bloque bloque-resultado text-center" id="montoResultado">
                     <p id="primerTest"></p>
                 </div>

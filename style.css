@@ -54,3 +54,7 @@ div.bloque.bloque-resultado{
     border-radius: 20px;
     font-size: 30px;
 }
+
+form-control{
+    border-radius:20px;
+}

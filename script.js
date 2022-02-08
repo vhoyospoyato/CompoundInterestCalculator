@@ -7,7 +7,9 @@ var amount = 0;
 
 function compoundInterest(){
 
+    document.getElementById("resultado").style.display = "block";
     event.preventDefault();
+
     var principal = parseFloat(document.getElementById("principal").value);
     var termOfLoan = parseFloat(document.getElementById("termOfLoan").value);
     var additionalCash = parseFloat(document.getElementById("additionalCash").value);
