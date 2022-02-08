@@ -20,10 +20,12 @@ function compoundInterest(){
     var c = termOfLoan * 1;
     var d = Math.pow(b, c);
     var e = additionalCash * 12;
-    //var amount = ((principal+e) * d).toFixed(2);
+    var amount = principal * (Math.pow(1+(a/1)),(1*termOfLoan));
+    var interest = amount - principal;
+
 
     var amount = (principal * interestRate)+principal;
 
-    document.getElementById("primerTest").innerHTML=amount;
+    document.getElementById("primerTest").innerHTML=amount+ " & "+ interest;
 
 }
