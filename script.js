@@ -43,13 +43,13 @@ console.log(b);
 
     }
 
-    finalAmount = iteration;
+    finalAmount = iteration.toFixed(2);
 
-    var interest = finalAmount - (principal*c);
+    var interest = (finalAmount - (principal*c)).toFixed(2);
 
 
     //var amount = (principal * interestRate)+principal;
-
-    document.getElementById("primerTest").innerHTML=finalAmount+ " & "+ interest;
+    document.getElementById("resultadoTiempo").innerHTML = c;
+    document.getElementById("resultadoCalculado").innerHTML= finalAmount+ " & Interest: "+ interest;
 
 }

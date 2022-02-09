@@ -9,7 +9,7 @@
     position: static;
     width: 408px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: ;
     top: 45px;
     
     background: #363A50;
@@ -32,29 +32,43 @@
 }
 
 div.bloques{
-
-    padding: 10px;
-
+    padding-top: 10px;
 }
 
 div.bloque.bloque-text{
-    padding-bottom: 10px;
+    padding-bottom: ;
 }
 
 div.bloque.bloque-input{
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15%;
     padding-right: 15%;
+    text-align: center;
 }
 
 div.bloque.bloque-resultado{
     background-color: green;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    border-radius: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+    width: 100%;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
     font-size: 30px;
+}
+
+div.bloque-text-resultado{
+    font-size: 15px;
+    width: 100%;
 }
 
 form-control{
     border-radius:20px;
+}
+
+ins{
+    text-decoration: none;
+    font-weight: bold;
+    font-size:20px;
 }
