@@ -9,8 +9,6 @@
     position: static;
     width: 408px;
     padding-top: 25px;
-    padding-bottom: ;
-    top: 45px;
     
     background: #363A50;
     border-radius: 20px;
@@ -32,19 +30,23 @@
 }
 
 div.bloques{
-    padding-top: 10px;
+    padding:5px;
 }
 
 div.bloque.bloque-text{
-    padding-bottom: ;
+    padding:5px ;
 }
 
 div.bloque.bloque-input{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
+    padding-bottom:5px;
     padding-left: 15%;
     padding-right: 15%;
     text-align: center;
+}
+
+div.bloque.bloque-button{
+    padding-bottom: 10px;
 }
 
 div.bloque.bloque-resultado{
@@ -58,13 +60,19 @@ div.bloque.bloque-resultado{
     font-size: 30px;
 }
 
-div.bloque-text-resultado{
+div.bloque.bloque-text-resultado{
     font-size: 15px;
     width: 100%;
 }
 
-form-control{
-    border-radius:20px;
+div.bloque.bloque-text-resultado-calculado{
+    font-size: 30px;
+    width: 100%;
+}
+
+
+input{
+    text-align: center;
 }
 
 ins{

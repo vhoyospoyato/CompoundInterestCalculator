@@ -8,6 +8,7 @@ var amount = 0;
 function compoundInterest(){
 
     document.getElementById("resultado").style.display = "block";
+    document.getElementById("botonReset").style.display = "inline";
     event.preventDefault();
 
     const principal = parseFloat(document.getElementById("principal").value);
@@ -17,7 +18,7 @@ function compoundInterest(){
     
     var a = interestRate;
     var b = 1 + a;
-console.log(b);
+    console.log(b);
     var c = termOfLoan;
     var d = Math.pow(b, c);
     var e = additionalCash * 12;
@@ -25,6 +26,15 @@ console.log(b);
     var previousAmount = p;
 
     var finalAmount = 0;
+
+    var formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+      
+        // These options are needed to round to whole numbers if that's what you want.
+        //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+        //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+      });
     
     for (i=1; i<=c; i++){
 
@@ -43,13 +53,19 @@ console.log(b);
 
     }
 
-    finalAmount = iteration.toFixed(2);
+    finalAmount = formatter.format(iteration.toFixed(2));
 
     var interest = (finalAmount - (principal*c)).toFixed(2);
 
-
-    //var amount = (principal * interestRate)+principal;
     document.getElementById("resultadoTiempo").innerHTML = c;
-    document.getElementById("resultadoCalculado").innerHTML= finalAmount+ " & Interest: "+ interest;
+    document.getElementById("resultadoCalculado").innerHTML= finalAmount
 
+}
+
+function resetBoton(){
+    document.getElementById("principal").value = '';
+    document.getElementById("additionalCash").value = '';
+    document.getElementById("termOfLoan").value = '';
+    document.getElementById("resultado").style.display = "none";
+    document.getElementById("botonReset").style.display = "none";
 }

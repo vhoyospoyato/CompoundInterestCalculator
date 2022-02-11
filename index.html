@@ -12,7 +12,8 @@
 </head>
 <body>
     <div class="container body">
-        <div class="row calculadora justify-content-center">
+        <div class= "calculadora" id="frame">
+        <div class="row calculadora-body justify-content-center">
             <div class="row bloques" id="titulo">
                 <div class="col titulo">
                     Compound Interest Calculator
@@ -23,7 +24,7 @@
                     Deposito inicial
                 </div>
                 <div class="col-md-12 bloque bloque-input">
-                    <input class="form-control form-control-md" style="border-radius: 20px; border:0px" type="number" placeholder="10.000€" id="principal">
+                    <input class="form-control form-control-md" style="border-radius: 20px; border:0px;" type="number" placeholder="10.000€" id="principal">
                 </div>
             </div>
             <div class="row bloques" id="contribucion">
@@ -48,25 +49,29 @@
                 </div>
                 <div class="col-md-12 bloque bloque-input">
                     <select class="form-control form-select form-control-md" style="border-radius: 20px; border:0px" placeholder="Seleccione una de las opciones" id="interestRate">
-                        <option style="border-radius: 20px; border:0px" value="0.10">Riesgo bajo</option>
-                        <option value="0.30">Riesgo medio</option>
-                        <option value="0.50">Riesgo alto</option>
+                        <option style="border-radius: 20px; border:0px" value="0.10">Riesgo bajo (10%)</option>
+                        <option value="0.20">Riesgo medio (20%)</option>
+                        <option value="0.30">Riesgo alto (30%)</option>
                     </select>
                 </div>
             </div>
-            <div class="row" id="bottonCalc">
-                <div class="col-12 bloque bloque-text text-center">
+            <div class="row bloques" id="bottonCalc">
+                <div class="col-12 bloque bloque-button text-center">
                     <button class="btn btn-primary" style="border-radius: 20px; border:0px" type="submit" id="botonCalcular" onclick="compoundInterest()">Calcular</button>
+                    <br><button class="btn btn-link text-center"  style="display:none;" type="reset" id="botonReset"  onclick="resetBoton()">Reset</button>
                 </div>
             </div>
-            <div class="row bloques" id="resultado" style="display:;">
-                <div class="col-12 bloque bloque-resultado text-center" id="montoResultado">
-                    <div class="bloque bloque-text-resultado">
-                        <p>En <ins id="resultadoTiempo"></ins> años habra generado:</p>
-                    </div>
+        </div>
+        <div id="resultado" style="display:none;">
+            <div class="col-12 bloque bloque-resultado text-center" id="montoResultado">
+                <div class="bloque bloque-text-resultado">
+                    <p>En <ins id="resultadoTiempo"></ins> años habra generado:</p>
+                </div>
+                <div class="bloque-text-resultado-calculado">
                     <p class="text-center" id="resultadoCalculado"></p>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </body>
